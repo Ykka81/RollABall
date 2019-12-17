@@ -21,9 +21,9 @@ public class PlayerController : MonoBehaviour
 
         rb.AddForce (movement * speed);
 
-        if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 1.0f)
+        if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 0.5f)
         {
-            Vector3 jump = new Vector3(0.0f, 200.0f, 0.0f);
+            Vector3 jump = new Vector3(0.0f, 300.0f, 0.0f);
 
             rb.AddForce(jump);
         }
