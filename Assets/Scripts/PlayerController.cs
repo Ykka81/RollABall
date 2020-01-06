@@ -8,22 +8,22 @@ public class PlayerController : MonoBehaviour
     public float jump;
     private Rigidbody rb;
 
-    void Start ()
+    void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-    void FixedUpdate ()
+    void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        rb.AddForce (movement * speed);
+        rb.AddForce(movement * speed);
 
-        if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 0.5f)
+        if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 2.0f)
         {
-            Vector3 jump = new Vector3(0.0f, 300.0f, 0.0f);
+            Vector3 jump = new Vector3(0.0f, 200.0f, 0.0f);
 
             rb.AddForce(jump);
         }

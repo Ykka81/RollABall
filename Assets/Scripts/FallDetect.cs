@@ -8,7 +8,7 @@ public class FallDetect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        checkpoint = new Vector3(0, 7, 0);
+        checkpoint = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
