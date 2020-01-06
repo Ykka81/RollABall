@@ -14,7 +14,7 @@ public class FallDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y <-60)
+        if (transform.position.y <-55)
         {
             transform.position = checkpoint;
         }
