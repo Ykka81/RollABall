@@ -5545,7 +5545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1446b144062f96249a5acb4d13070cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 8
   jump: 0
 --- !u!54 &1834488315
 Rigidbody:
@@ -5587,8 +5587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5d7a1a5315edf4da5c25aa453ca295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 0}
-  startTime: 0
 --- !u!114 &1834488318
 MonoBehaviour:
   m_ObjectHideFlags: 0
