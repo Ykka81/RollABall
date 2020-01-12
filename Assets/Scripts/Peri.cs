@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Peri : PickupObject
 {
-    void Start()
-    {
-    }
+    private bool see;
+
     void Update()
     {
-        if (theScore == 6)
-        {
-            PeriText.color = Color.blue;
-            PeriText.text = ("KERÄSIT KAIKKI KOLIKOT!");
+        see = true;
+
+        if (see == true)
+        {         
+            if (Jemmassa == 6)
+            {
+                PeriText.color = Color.blue;
+                PeriText.text = ("KERÄSIT KAIKKI KOLIKOT!");
+            }
         }
     }
 }

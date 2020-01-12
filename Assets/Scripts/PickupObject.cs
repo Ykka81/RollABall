@@ -5,9 +5,21 @@ using UnityEngine.UI;
 
 public class PickupObject : MonoBehaviour
 {
-    public static int theScore;
+    private static int theScore;
     public Text CoinsText;
     public Text PeriText;
+
+    public int Jemmassa
+    {
+        set
+        {
+            theScore = value;
+        }
+        get
+        {
+            return theScore;
+        }
+    }
 
     void OnTriggerEnter(Collider collider)
     {
@@ -16,10 +28,6 @@ public class PickupObject : MonoBehaviour
             theScore += 1;
             Destroy(gameObject);
         }
-    }
-
-    void Start()
-    {
     }
 
     void Update()
